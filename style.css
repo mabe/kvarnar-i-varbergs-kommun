@@ -186,7 +186,95 @@ footer p {
     font-style: italic;
 }
 
-/* Responsive design */
+/* Mills list */
+.mills-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.mill-card {
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--bg-color);
+    transition: box-shadow 0.2s ease;
+}
+
+.mill-card:hover {
+    box-shadow: var(--shadow);
+}
+
+.mill-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.mill-card h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mill-card h3 a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.mill-meta {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+/* Mill detail page */
+.mill-detail {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.mill-info {
+    margin-top: 1rem;
+}
+
+.mill-info dt {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 1.25rem;
+}
+
+.mill-info dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.back-link-section {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+/* Header back link */
+.header-back {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.header-back:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
