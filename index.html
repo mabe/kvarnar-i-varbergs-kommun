@@ -80,9 +80,9 @@
             <h2>Kvarnar</h2>
             <p>Nedan listas de kvarnar som dokumenterats i utredningen.</p>
             <ul class="mills-list">
-                {% for mill in site.data.mills %}
+                {% for mill in site.mills %}
                 <li class="mill-card">
-                    <h3><a href="{{ site.baseurl }}/kvarnar/{{ mill.slug }}/">{{ mill.name }}</a></h3>
+                    <h3><a href="{{ mill.url | relative_url }}">{{ mill.name }}</a></h3>
                     <p class="mill-meta">
                         <span class="mill-location">📍 {{ mill.location }}</span>
                         <span class="mill-type">⚙️ {{ mill.type }}</span>
