@@ -1,0 +1,36 @@
+---
+---
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.name }} — Kvarnar i Varbergs kommun{% endif %}">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}kvarnar, Varberg, Halland, hembygd, kulturhistoria, mills, windmills, watermills{% endif %}">
+    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Hallandsbygd{% endif %}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ page.name }} — Kvarnar i Varbergs kommun{% endif %}</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{% if page.header_title %}{{ page.header_title }}{% else %}{{ page.name }}{% endif %}</h1>
+            <p class="subtitle">{% if page.subtitle %}{{ page.subtitle }}{% else %}<a href="{{ '/' | relative_url }}" class="header-back">← Kvarnar i Varbergs kommun</a>{% endif %}</p>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Hallandsbygd 1974. Dokumentation tillgängliggjord via Vedige-Assallstorps Hembygdsförening.</p>
+            <p class="footer-note">
+                Detta är en webbpresentation av det historiska dokumentet.
+                För fullständig information, se originaldokumentet.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
