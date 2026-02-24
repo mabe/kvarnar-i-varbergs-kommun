@@ -82,7 +82,7 @@
             <ul class="mills-list">
                 {% for mill in site.data.mills %}
                 <li class="mill-card">
-                    <h3><a href="kvarnar/{{ mill.slug }}.html">{{ mill.name }}</a></h3>
+                    <h3><a href="{{ site.baseurl }}/kvarnar/{{ mill.slug }}/">{{ mill.name }}</a></h3>
                     <p class="mill-meta">
                         <span class="mill-location">📍 {{ mill.location }}</span>
                         <span class="mill-type">⚙️ {{ mill.type }}</span>

@@ -5,45 +5,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ås väderkvarn — Kvarnar i Varbergs kommun">
-    <title>Ås väderkvarn — Kvarnar i Varbergs kommun</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta name="description" content="{{ page.name }} — Kvarnar i Varbergs kommun">
+    <title>{{ page.name }} — Kvarnar i Varbergs kommun</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Ås väderkvarn</h1>
-            <p class="subtitle"><a href="../" class="header-back">← Kvarnar i Varbergs kommun</a></p>
+            <h1>{{ page.name }}</h1>
+            <p class="subtitle"><a href="{{ '/' | relative_url }}" class="header-back">← Kvarnar i Varbergs kommun</a></p>
         </div>
     </header>
 
     <main class="container">
-        {% assign mill = site.data.mills | where: "slug", "as-vaderkvarn" | first %}
         <section class="mill-detail">
             <h2>Om kvarnen</h2>
             <dl class="mill-info">
                 <dt>Namn</dt>
-                <dd>{{ mill.name }}</dd>
+                <dd>{{ page.name }}</dd>
 
                 <dt>Plats</dt>
-                <dd>{{ mill.location }}</dd>
+                <dd>{{ page.location }}</dd>
 
                 <dt>Kvarntyp</dt>
-                <dd>{{ mill.type }}</dd>
+                <dd>{{ page.type }}</dd>
 
                 <dt>Ålder</dt>
-                <dd>{{ mill.age }}</dd>
+                <dd>{{ page.age }}</dd>
 
                 <dt>Förmalningstyp / kvarndrift</dt>
-                <dd>{{ mill.milling_type }}</dd>
+                <dd>{{ page.milling_type }}</dd>
 
                 <dt>Byggnadsskick / tillstånd</dt>
-                <dd>{{ mill.condition }}</dd>
+                <dd>{{ page.condition }}</dd>
             </dl>
         </section>
 
         <section class="back-link-section">
-            <a href="../" class="btn-primary">← Tillbaka till startsidan</a>
+            <a href="{{ '/' | relative_url }}" class="btn-primary">← Tillbaka till startsidan</a>
         </section>
     </main>
 
