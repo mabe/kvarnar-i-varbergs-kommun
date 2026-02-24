@@ -1,59 +1,29 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ page.name }} — Kvarnar i Varbergs kommun">
-    <title>{{ page.name }} — Kvarnar i Varbergs kommun</title>
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>{{ page.name }}</h1>
-            <p class="subtitle"><a href="{{ '/' | relative_url }}" class="header-back">← Kvarnar i Varbergs kommun</a></p>
-        </div>
-    </header>
+<section class="mill-detail">
+    <h2>Om kvarnen</h2>
+    <dl class="mill-info">
+        <dt>Namn</dt>
+        <dd>{{ page.name }}</dd>
 
-    <main class="container">
-        <section class="mill-detail">
-            <h2>Om kvarnen</h2>
-            <dl class="mill-info">
-                <dt>Namn</dt>
-                <dd>{{ page.name }}</dd>
+        <dt>Plats</dt>
+        <dd>{{ page.location }}</dd>
 
-                <dt>Plats</dt>
-                <dd>{{ page.location }}</dd>
+        <dt>Kvarntyp</dt>
+        <dd>{{ page.type }}</dd>
 
-                <dt>Kvarntyp</dt>
-                <dd>{{ page.type }}</dd>
+        <dt>Ålder</dt>
+        <dd>{{ page.age }}</dd>
 
-                <dt>Ålder</dt>
-                <dd>{{ page.age }}</dd>
+        <dt>Förmalningstyp / kvarndrift</dt>
+        <dd>{{ page.milling_type }}</dd>
 
-                <dt>Förmalningstyp / kvarndrift</dt>
-                <dd>{{ page.milling_type }}</dd>
+        <dt>Byggnadsskick / tillstånd</dt>
+        <dd>{{ page.condition }}</dd>
+    </dl>
+</section>
 
-                <dt>Byggnadsskick / tillstånd</dt>
-                <dd>{{ page.condition }}</dd>
-            </dl>
-        </section>
-
-        <section class="back-link-section">
-            <a href="{{ '/' | relative_url }}" class="btn-primary">← Tillbaka till startsidan</a>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; Hallandsbygd 1974. Dokumentation tillgängliggjord via Vedige-Assallstorps Hembygdsförening.</p>
-            <p class="footer-note">
-                Detta är en webbpresentation av det historiska dokumentet.
-                För fullständig information, se originaldokumentet.
-            </p>
-        </div>
-    </footer>
-</body>
-</html>
+<section class="back-link-section">
+    <a href="{{ '/' | relative_url }}" class="btn-primary">← Tillbaka till startsidan</a>
+</section>
