@@ -80,7 +80,8 @@
             <h2>Kvarnar</h2>
             <p>Nedan listas de kvarnar som dokumenterats i utredningen.</p>
             <ul class="mills-list">
-                {% for mill in site.mills %}
+                {% assign sorted_mills = site.mills | sort: 'name' %}
+                {% for mill in sorted_mills %}
                 <li class="mill-card">
                     <h3><a href="{{ mill.url | relative_url }}">{{ mill.name }}</a></h3>
                     <p class="mill-meta">
