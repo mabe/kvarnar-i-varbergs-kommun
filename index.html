@@ -67,7 +67,7 @@ author: Hallandsbygd
     <h2>Kvarnar</h2>
     <p>Nedan listas de kvarnar som dokumenterats i utredningen.</p>
     <ul class="mills-list">
-        {% assign sorted_mills = site.mills | swedish_sort: 'name' %}
+        {% assign sorted_mills = site.mills | swedish_sort: 'location' %}
         {% for mill in sorted_mills %}
         <li class="mill-card">
             <h3><a href="{{ mill.url | relative_url }}">{{ mill.name }}</a></h3>
