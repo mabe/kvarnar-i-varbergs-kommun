@@ -6,6 +6,7 @@ En webbplats som presenterar en historisk utredning om kvarnar i Varbergs kommun
 
 Projektet tillgängliggör dokumentation om de kvarnar som funnits i Varbergs kommun, inklusive både väderkvarnar och vattenkvarnar. Materialet är hämtat från Vedige-Assallstorps Hembygdsförening.
 
+- **Webbplats:** [https://mabe.github.io/kvarnar-i-varbergs-kommun/](https://mabe.github.io/kvarnar-i-varbergs-kommun/)
 - **Utredningsår:** 1971
 - **Publicering:** Hallandsbygd 1974
 - **Källa:** [Vedige-Assallstorps Hembygdsförening](https://www.hembygd.se/veddigeassallstorp)
