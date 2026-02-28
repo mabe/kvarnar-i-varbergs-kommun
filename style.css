@@ -192,6 +192,57 @@ footer p {
     margin-top: 1rem;
 }
 
+/* Filter controls */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.25rem 0;
+    padding: 1rem 1.25rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.filter-group input[type="search"],
+.filter-group select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    background-color: var(--white);
+    transition: border-color 0.2s ease;
+}
+
+.filter-group input[type="search"]:focus,
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(74, 143, 182, 0.2);
+}
+
+.no-results {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 1rem;
+}
+
 .mill-card {
     padding: 1.25rem;
     margin-bottom: 1rem;
