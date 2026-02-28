@@ -3,7 +3,7 @@ layout: mill
 name: Kvarnen i Näs
 location: Syllinge by, Veddige
 slug: kvarnen-i-nas
-owner: Kvarnen har följande delägare: Arne Johansson, "Lyckan", Näs, Gunnar Andreassons sterbhus, "Broaräng", Näs, Erik Månssons sterbhus, Kullaberg, Syllinge samt Roj Friberg, "Månsa", Näs.
+owner: 'Kvarnen har följande delägare: Arne Johansson, "Lyckan", Näs, Gunnar Andreassons sterbhus, "Broaräng", Näs, Erik Månssons sterbhus, Kullaberg, Syllinge samt Roj Friberg, "Månsa", Näs.'
 type: Hjulkvarn av underfallstyp
 age: Kvarnen lär vara byggd 1799.
 milling_type: Kvarnen har varit gemensam husbehovskvarn för fem gårdar. Någon obetydlig tullförmalning har förekommit. Kvarnen var i drift till 1940-talets början.
