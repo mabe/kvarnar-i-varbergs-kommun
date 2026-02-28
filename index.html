@@ -201,7 +201,7 @@ author: Hallandsbygd
             <label for="mill-type-filter">Kvarntyp:</label>
             <select id="mill-type-filter" aria-label="Filtrera på kvarntyp">
                 <option value="">Alla typer</option>
-                {% assign types = site.mills | map: 'type' | uniq | sort %}
+                {% assign types = site.mills | map: 'type' | compact | uniq | sort %}
                 {% for t in types %}
                 <option value="{{ t }}">{{ t }}</option>
                 {% endfor %}
@@ -211,7 +211,7 @@ author: Hallandsbygd
             <label for="mill-location-filter">Plats:</label>
             <select id="mill-location-filter" aria-label="Filtrera på plats">
                 <option value="">Alla platser</option>
-                {% assign locations = site.mills | map: 'location' | uniq | sort %}
+                {% assign locations = site.mills | map: 'location' | compact | uniq | sort %}
                 {% for l in locations %}
                 <option value="{{ l }}">{{ l }}</option>
                 {% endfor %}
