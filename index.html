@@ -66,10 +66,41 @@ author: Hallandsbygd
 <section class="mills">
     <h2>Kvarnar</h2>
     <p>Nedan listas de kvarnar som dokumenterats i utredningen.</p>
-    <ul class="mills-list">
+
+    <div class="filter-controls">
+        <div class="filter-group">
+            <label for="mill-search">Sök:</label>
+            <input type="search" id="mill-search" placeholder="Sök kvarn…" aria-label="Sök kvarn">
+        </div>
+        <div class="filter-group">
+            <label for="mill-type-filter">Kvarntyp:</label>
+            <select id="mill-type-filter" aria-label="Filtrera på kvarntyp">
+                <option value="">Alla typer</option>
+                {% assign types = site.mills | map: 'type' | uniq | sort %}
+                {% for t in types %}
+                <option value="{{ t }}">{{ t }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="mill-location-filter">Plats:</label>
+            <select id="mill-location-filter" aria-label="Filtrera på plats">
+                <option value="">Alla platser</option>
+                {% assign locations = site.mills | map: 'location' | uniq | sort %}
+                {% for l in locations %}
+                <option value="{{ l }}">{{ l }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+
+    <ul class="mills-list" id="mills-list">
         {% assign sorted_mills = site.mills | swedish_sort: 'location' %}
         {% for mill in sorted_mills %}
-        <li class="mill-card">
+        <li class="mill-card"
+            data-name="{{ mill.name | downcase }}"
+            data-type="{{ mill.type }}"
+            data-location="{{ mill.location }}">
             <h3><a href="{{ mill.url | relative_url }}">{{ mill.name }}</a></h3>
             <p class="mill-meta">
                 <span class="mill-location">📍 {{ mill.location }}</span>
@@ -78,7 +109,10 @@ author: Hallandsbygd
         </li>
         {% endfor %}
     </ul>
+    <p class="no-results" id="mills-no-results" hidden>Inga kvarnar matchar sökningen.</p>
 </section>
+
+<script src="{{ '/filter.js' | relative_url }}"></script>
 
 <section class="resources">
     <h2>Relaterade resurser</h2>
