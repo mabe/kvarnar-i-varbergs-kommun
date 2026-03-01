@@ -12,5 +12,5 @@ milling_type: Kvarnen har varit tullkvarn. Den var i drift till 1965. Råoljemot
 condition: Kvarnen är en mycket kraftig och hög åttkantig hättkvarn. De två nedersta våningarna är byggda i stabil gråsten, vilken reveterats. De två övre våningarna är byggda i trä, och är på utsidan klädda med brunt trävirke. Kvarnen har tidigare varit spånklädd. Hättan är mycket välgjord och stabil, utvändigt klädd med tjärpapp. Invändigt är kvarnen vitrappad. Ett stenpar är bevarat, men tidigare har två eller tre funnits. Maskineriet och hjulen är mycket kraftigt byggda. Stickhjulet är gjutet av järn, och har varit av denna typ från början. Hättan har automatiskt vridits i läge med hjälp av en vindros. Kvarnen är i mycket gott skick. Den renoverades på Veddige Hembygdsförenings initiativ år 1969.
 surroundings: Kvarnen ligger mycket högt med vid utsikt. Den utmärker sig på långt håll i landskapet.
 image: https://github.com/user-attachments/assets/aa3a63bb-bb1f-427f-83d8-e13780d05d87
-image_caption: Ås kvarn i Veddige. Neg nr H 274:8. Foto: Agneta Åsgrim, 1971. Källa: Hallands kulturhistoriska museum.
+image_caption: "Ås kvarn i Veddige. Neg nr H 274:8. Foto: Agneta Åsgrim, 1971. Källa: Hallands kulturhistoriska museum."
 ---
