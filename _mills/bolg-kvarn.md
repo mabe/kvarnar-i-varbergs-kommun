@@ -1,7 +1,7 @@
 ---
 layout: mill
 name: Bolg kvarn
-location: Bolg, Strävalla
+location: Stråvalla
 slug: bolg-kvarn
 owner: Enar Johansson, Bolg, Värö
 type: Hättkvarn, typ C

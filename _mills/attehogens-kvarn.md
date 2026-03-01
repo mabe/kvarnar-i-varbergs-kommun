@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Ättehögens kvarn
-location: Sunvära 9, Värö
+location: Värö
+cadastral: Sunvära 9
 slug: attehogens-kvarn
 owner: Anders Johansson, Sunvära 23 och Jenny Karlsson, Sunvära 9
 type: Hättkvarn, typ A, av litet format
