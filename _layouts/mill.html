@@ -21,6 +21,11 @@ layout: default
 
         <dt>Byggnadsskick / tillstånd</dt>
         <dd>{{ page.condition }}</dd>
+
+        {% if page.surroundings %}
+        <dt>Omgivning</dt>
+        <dd>{{ page.surroundings }}</dd>
+        {% endif %}
     </dl>
 </section>
 
