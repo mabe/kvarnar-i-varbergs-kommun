@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Bäcks kvarn
-location: Ersgård, Bäck, Ås
+location: Ås
+cadastral: Ersgård, Bäck
 slug: backs-kvarn
 owner: Gunnar Johansson, Mölndal.
 type: Hättkvarn, typ B

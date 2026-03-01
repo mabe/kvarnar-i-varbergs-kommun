@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Skvaltkvarn tillhörande Ulvatorp 2
-location: Ulvatorpsbäcken, Sällstorp
+location: Sällstorp
+cadastral: Ulvatorpsbäcken
 slug: skvaltkvarn-ulvatorp-2
 owner: Ingvar Johansson, Ulvatorp 2.
 type: Skvaltkvarn

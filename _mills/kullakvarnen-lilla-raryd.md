@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Kullakvarnen, Lilla Råryd
-location: Lilla Råryd, Veddige
+location: Veddige
+cadastral: Lilla Råryd
 slug: kullakvarnen-lilla-raryd
 owner: Karl Johansson, Lilla Råryd, Veddige.
 type:
