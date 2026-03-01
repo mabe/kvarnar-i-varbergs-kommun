@@ -8,17 +8,21 @@
 :root {
     --primary-color: #2c5f7c;
     --secondary-color: #4a8fb6;
-    --accent-color: #d4a574;
-    --text-color: #333;
+    --accent-color: #d35400;
+    --text-color: #2c3e50;
     --text-light: #666;
-    --bg-color: #f8f9fa;
+    --bg-color: #fdfaf6;
     --white: #ffffff;
     --border-color: #ddd;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    --watermill-color: #2980b9;
+    --windmill-color: #f39c12;
+    --card-bg: #ffffff;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -515,10 +519,16 @@ footer p {
 
 .stat-number {
     display: block;
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--accent-color);
     line-height: 1;
     margin-bottom: 0.25rem;
+}
+
+.watermill-stat .stat-number,
+.windmill-stat .stat-number {
+    color: var(--white);
 }
 
 .stat-label {
@@ -602,6 +612,81 @@ footer p {
 .region-type {
     font-size: 0.85rem;
     color: var(--text-light);
+}
+
+/* ── Suggested infographic styles ─────────────────────────────────────────── */
+
+/* Style the main infographic banner if you use the full image at the top */
+.hero-infographic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+/* Styling for the Category Headers with extracted icons */
+.mill-category {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+/* Style the list of mills as infographic "Cards" rather than simple bullet points */
+ul.mill-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+ul.mill-list li {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-top: 4px solid var(--accent-color);
+}
+
+ul.mill-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Apply specific border colors to the cards depending on the mill type */
+ul.mill-list li.vattenkvarn {
+    border-top-color: var(--watermill-color);
+}
+
+ul.mill-list li.vaderkvarn {
+    border-top-color: var(--windmill-color);
+}
+
+/* Data blocks for statistics */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin: 2rem 0;
+}
+
+.stat-box {
+    text-align: center;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────── */
