@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Holma kvarn
-location: Kvarnome, Veddige
+location: Veddige
+cadastral: Kvarnome
 slug: holma-kvarn
 owner: Alfred Karlsson, Holmen, Kvarnome 4.
 type: Skvaltkvarn

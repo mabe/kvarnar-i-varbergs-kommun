@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Stackenäsgårdens kvarn
-location: Stackenäs, Karl Gustav
+location: Karl Gustav
+cadastral: Stackenäs
 slug: stackenasgardens-kvarn
 owner: Åke Persson, Stackenäsgården, Kungsäter.
 type: Vattenkvarn, driven med elkraft från eget elverk

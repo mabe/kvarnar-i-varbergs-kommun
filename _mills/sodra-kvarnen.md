@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Södra Kvarnen
-location: Södra vägen, Varberg
+location: Varberg
+cadastral: Södra vägen
 slug: sodra-kvarnen
 owner: Allan Kanje, Varberg
 type: Hättkvarn, typ A

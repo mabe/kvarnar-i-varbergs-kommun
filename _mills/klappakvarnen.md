@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Kläppakvarnen
-location: Backa, Värö
+location: Värö
+cadastral: Backa
 slug: klappakvarnen
 owner: Dagny Andersson, Holavägen 12, Huskvarna
 type: Hättkvarn, typ A

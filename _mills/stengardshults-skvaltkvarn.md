@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Stengårdshults skvaltkvarn
-location: Bosgården, Ås
+location: Ås
+cadastral: Bosgården
 slug: stengardshults-skvaltkvarn
 owner: Karin Andersson, Ponteniärsgatan 5, Stockholm.
 type: Skvaltkvarn

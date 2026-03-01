@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Stora Råryds skvaltkvarn
-location: Lilla Råryd, Veddige
+location: Veddige
+cadastral: Lilla Råryd
 slug: stora-raryds-skvaltkvarn
 owner: Åke Karlsson, Lilla Råryd, Veddige.
 type: Skvaltkvarn

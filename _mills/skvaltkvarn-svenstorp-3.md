@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Skvaltkvarn tillhörande Svenstorp 3
-location: Ulvatorpsbäcken, Sällstorp
+location: Sällstorp
+cadastral: Ulvatorpsbäcken
 slug: skvaltkvarn-svenstorp-3
 owner: Ragnar Johansson, Svenstorp 2 och Bror Svennerberg, Svenstorp 3.
 type: Skvaltkvarn

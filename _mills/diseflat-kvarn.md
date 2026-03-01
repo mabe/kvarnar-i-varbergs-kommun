@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Diseflat kvarn
-location: Kvarnome, Veddige
+location: Veddige
+cadastral: Kvarnome
 slug: diseflat-kvarn
 owner: Anders Johanssons sterbhus, Kvarnome och bröderna Bernandersson, Stora Gården, Syllinge.
 type: Hjulkvarn av underfallstyp
