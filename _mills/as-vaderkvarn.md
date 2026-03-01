@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Ås väderkvarn
-location: Ås by; 6:8, Veddige
+location: Ås
+cadastral: Ås by; 6:8, Veddige
 slug: as-vaderkvarn
 owner: Sven Svensson, Ås by 6:8. Kvarnen disponeras av Veddige Hembygdsförening som håller den i skick.
 type: Hättkvarn, typ A

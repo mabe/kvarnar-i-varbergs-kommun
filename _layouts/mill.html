@@ -10,6 +10,11 @@ layout: default
         <dt>Plats</dt>
         <dd>{{ page.location }}</dd>
 
+        {% if page.cadastral %}
+        <dt>Fastighetsbeteckning</dt>
+        <dd>{{ page.cadastral }}</dd>
+        {% endif %}
+
         <dt>Kvarntyp</dt>
         <dd>{{ page.type }}</dd>
 
