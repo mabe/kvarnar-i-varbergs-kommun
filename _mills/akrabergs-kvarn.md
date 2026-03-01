@@ -2,6 +2,7 @@
 layout: mill
 name: Åkrabergs kvarn
 location: Stråvalla
+cadastral: Åkraberg 1:2
 slug: akrabergs-kvarn
 owner: Lennart Gunnesson, Åkraberg 1:2 och Elmer Johansson, Löftaskog, Frillesås
 type: Hättkvarn, typ A

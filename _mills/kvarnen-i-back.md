@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Kvarnen i Bäck
-location: Bäck nr. 17, Ås
+location: Bäck, Ås
+cadastral: Bäck 17
 slug: kvarnen-i-back
 owner: Åke Jogeland, Borås.
 type: Hättkvarn, typ A, av litet format

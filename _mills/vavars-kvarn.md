@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Vävars kvarn
-location: Bua 17:1, Värö
+location: Bua, Värö
+cadastral: Bua 17:1
 slug: vavars-kvarn
 owner: Gustav Nilsson, Vävars, Bua 17:1
 type: Hättkvarn, typ C

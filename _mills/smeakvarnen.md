@@ -1,7 +1,8 @@
 ---
 layout: mill
 name: Smeakvarnen
-location: Bua 18, Värö
+location: Bua, Värö
+cadastral: Bua 18
 slug: smeakvarnen
 owner: John Eriksson, Smeas, Bua 18 och Johan Olsson, Börs, Bua 11
 type: Hättkvarn, typ C
