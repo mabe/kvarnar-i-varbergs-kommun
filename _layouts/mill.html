@@ -18,6 +18,11 @@ layout: default
         <dt>Kvarntyp</dt>
         <dd>{{ page.type }}</dd>
 
+        {% if page.format %}
+        <dt>Format</dt>
+        <dd>{{ page.format }}</dd>
+        {% endif %}
+
         <dt>Ålder</dt>
         <dd>{{ page.age }}</dd>
 
