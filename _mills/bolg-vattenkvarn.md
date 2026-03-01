@@ -1,7 +1,7 @@
 ---
 layout: mill
 name: Bolg vattenkvarn
-location: Bolg, Stråvalla
+location: Stråvalla
 cadastral: Bolg 1:2
 slug: bolg-vattenkvarn
 owner: Yngve Bolg, Bolg 1:2

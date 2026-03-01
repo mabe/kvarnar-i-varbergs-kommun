@@ -1,7 +1,7 @@
 ---
 layout: mill
 name: Klinnekvarnen
-location: Källstorp, Värö
+location: Värö
 cadastral: Källstorp 3:13
 slug: klinnekvarnen
 owner: Ingenjör Dyrman, Kungsbacka

@@ -1,7 +1,7 @@
 ---
 layout: mill
 name: Sunvära kvarn
-location: Sunvära, Värö
+location: Värö
 cadastral: Sunvära 11
 slug: sunvara-kvarn
 owner: Värö Hembygdsförening, sedan 1953. Förvaltas numera av Hembygdsföreningen och Varbergs Museum.
