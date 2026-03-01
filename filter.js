@@ -21,6 +21,40 @@
         };
     });
 
+    Array.prototype.slice.call(typeSelect.options).forEach(function (option) {
+        option.setAttribute('data-label', option.text);
+    });
+    Array.prototype.slice.call(locationSelect.options).forEach(function (option) {
+        option.setAttribute('data-label', option.text);
+    });
+
+    function countMatching(filters) {
+        return cardData.filter(function (data) {
+            return (!filters.search ||
+                data.name.indexOf(filters.search) !== -1 ||
+                data.type.toLowerCase().indexOf(filters.search) !== -1 ||
+                data.location.toLowerCase().indexOf(filters.search) !== -1) &&
+                (!filters.type || data.type === filters.type) &&
+                (!filters.location || data.location === filters.location);
+        }).length;
+    }
+
+    function updateSelectCounts() {
+        var searchText = searchInput.value.toLowerCase().trim();
+        var selectedType = typeSelect.value;
+        var selectedLocation = locationSelect.value;
+
+        Array.prototype.slice.call(typeSelect.options).forEach(function (option) {
+            var count = countMatching({ search: searchText, type: option.value, location: selectedLocation });
+            option.text = option.getAttribute('data-label') + ' (' + count + ')';
+        });
+
+        Array.prototype.slice.call(locationSelect.options).forEach(function (option) {
+            var count = countMatching({ search: searchText, type: selectedType, location: option.value });
+            option.text = option.getAttribute('data-label') + ' (' + count + ')';
+        });
+    }
+
     function filterMills() {
         var searchText = searchInput.value.toLowerCase().trim();
         var selectedType = typeSelect.value;
@@ -45,9 +79,13 @@
         if (noResults) {
             noResults.hidden = visibleCount > 0;
         }
+
+        updateSelectCounts();
     }
 
     searchInput.addEventListener('input', filterMills);
     typeSelect.addEventListener('change', filterMills);
     locationSelect.addEventListener('change', filterMills);
+
+    updateSelectCounts();
 }());
