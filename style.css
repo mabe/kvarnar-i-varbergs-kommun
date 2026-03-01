@@ -313,6 +313,33 @@ footer p {
     margin-bottom: 2rem;
 }
 
+.mill-image {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.mill-image figure {
+    margin: 0;
+}
+
+.mill-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 0.75rem;
+}
+
+.mill-image figcaption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
 /* Header back link */
 .header-back {
     color: var(--white);
